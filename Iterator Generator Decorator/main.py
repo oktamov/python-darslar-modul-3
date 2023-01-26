@@ -93,4 +93,4 @@ def sum_index(lists):
 
 
 print(sum_index([1, 2, 3, 4]))  # 6
-print(sum_index((1, 2, 3, 4)))  # 6
+print(sum_index((1, 2, 3, 4)))  # Please send only list
