@@ -4,15 +4,15 @@
 def get_next_multiple(num):
     while True:
         yield num
-        num += a
+        num += 5
 
 
 a = 5
 two = get_next_multiple(a)
-print(next(two))
-print(next(two))
-print(next(two))
-print(next(two))
+# print(next(two))
+# print(next(two))
+# print(next(two))
+# print(next(two))
 
 """vazifa 2"""
 
@@ -67,7 +67,7 @@ def add(a, b):
 
 
 # print(add(2, 4))  # 6
-# print(add(6, 8))  # faqat juft sonlar kiritilsin!
+# print(add(3, 4))  # faqat juft sonlar kiritilsin!
 
 
 
@@ -92,6 +92,5 @@ def sum_index(lists):
     return lists
 
 
-# print(sum_index([1, 2, 3, 4]))  # 6
-# print(sum_index((1, 2, 3, 4)))  # 6
-
+print(sum_index([1, 2, 3, 4]))  # 6
+print(sum_index((1, 2, 3, 4)))  # 6
