@@ -1,6 +1,5 @@
 import csv
 
-
 def convert_comma_to_dot(func):
     def wrapper(file):
         new_rows = []
@@ -9,9 +8,7 @@ def convert_comma_to_dot(func):
             new_row = [col.replace(',', '.') for col in row]
             new_rows.append(new_row)
         return new_rows
-
     return wrapper
-
 
 @convert_comma_to_dot
 def read_csv(file):
@@ -22,12 +19,10 @@ def read_csv(file):
             rows.append(row)
     return rows
 
-
 def save_csv(file, rows):
     with open(file, 'w', newline='') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerows(rows)
-
 
 input_file = 'countries of the world.csv'
 output_file = 'countries of the world_converted.csv'
